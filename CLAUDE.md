@@ -9,7 +9,7 @@ A personal PyCharm/IntelliJ Python project (`TintinPython`) used by a student (3
 ## Structure
 
 - `src/` is the IntelliJ source root (declared in `TintinPython.iml` / `.idea/TintinPy.iml`), and is also where this repo's git work happens day to day.
-- Practice scripts are named by date and sequence: `YYYYMMDDNNN.py` (e.g. `20260619001.py` is the 1st script from 2026-06-19, `20260619002.py` the 2nd). New exercises should follow this same naming convention, using the actual current date.
+- Practice scripts are named by date and sequence: `YYYYMMDDNNN.py` (e.g. `20260619001.py` is the 1st script from 2026-06-19, `20260619002.py` the 2nd). New exercises should follow this same naming convention, using the actual current date. A short descriptive suffix is sometimes appended (e.g. `20260619003_Tic_Tac_Toe.py`) when it helps identify the exercise.
 - Each script is independent and self-contained — there's no shared module structure, no imports between scripts, and no package layout to preserve.
 - Scripts commonly start with a comment naming the topic/section being practiced (e.g. `# Section A: TRUE FALSE Practice`, `# HW 1`) — keep this convention when adding new exercises.
 - `.venv/` is a local virtualenv (not used for dependency management beyond the standard library — these scripts only use builtins).
