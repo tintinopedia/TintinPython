@@ -8,14 +8,14 @@ def game():
     name = player_name
     top_speed = 458.6
     end_line = laps
-    finish = str(input("Have you reached the end line?? 🔚 (yes\no)"))
-    speed = str(input("Did you hit the top speed?? yes\no"))
-    if finish == "yes":
+    finish = str(input("Have you reached the end line?? 🔚 (Yes or No?)"))
+    speed = str(input("Did you hit the top speed?? Yes or No?"))
+    if finish == "Yes":
         print("You won the game!! 🏆")
-        if finish == "yes":
+        if finish == "Yes":
             print("Things to do: \n")
             print(f"Try to hit the top speed🏎️!! \n \t {top_speed} \n")
-    elif finish == "no":
+    elif finish == "No":
         print("You have not reached the end line! \n")
         location = str(input("Tell me what can you see nearby!! Indications(Trees,mountain,road,nearby lake) \n")).lower()
         if location == "trees":
@@ -26,10 +26,10 @@ def game():
             laps = laps-km
             print(f"You have {shell_fuel} left.")
             fuel = str(input("Do you want refuel your F1 car. \n"))
-            if fuel == "yes":
+            if fuel == "Yes":
                 shell_fuel = 60.00+20
                 print(f"You have {shell_fuel} left.")
-            elif fuel == "no":
+            elif fuel == "No":
                 print("You have not refueled your F1 car.")
         elif location == "mountain":
             print("You have chosen mountain. \n")
@@ -39,7 +39,7 @@ def game():
             laps = laps-km
             print(f"You have {shell_fuel} left.")
             fuel = str(input("Do you want refuel your F1 car. \n"))
-            if fuel == "yes":
+            if fuel == "Yes":
                 shell_fuel = 60.00+20
             print(f"You have {shell_fuel} left.")
         elif location == "road":
@@ -54,25 +54,25 @@ def game():
             laps = laps-km
             print(f"You have {shell_fuel} left.")
             fuel = str(input("Do you want refuel your F1 car. \n"))
-            if fuel == "yes":
+            if fuel == "Yes":
                 shell_fuel = 60.00+20
                 print(f"You have {shell_fuel} left.")
-            elif fuel == "no":
+            elif fuel == "No":
                 print("You have not refueled your F1 car.")
     else:
         print("Invalid input!!")
     def status():
         print("Things to do: \n")
-        print(f"Try to hit the top speed🏎️!! \n \t {top_speed} \n")
+        print(f"Try to hit the top speed 🏎️!! \n \t {top_speed} \n")
         print("km = ",km)
         print("Try to save shell⛽️!! \n")
         print("shell_fuel = ",shell_fuel)
         print("Try to reach as early as you can!! \n to win the trophy🏆!! \n")
     status()
-    restart = str(input("Do you want to restart the game?? yes/no \n"))
-    if restart == "yes":
+    restart = str(input("Do you want to restart the game?? Yes or No? \n"))
+    if restart == "Yes":
         game()
-    elif restart == "no":
+    elif restart == "No":
         print("Thank you for playing!!")
     else:
         print("Invalid input!!")
