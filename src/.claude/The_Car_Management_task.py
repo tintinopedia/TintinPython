@@ -124,7 +124,6 @@ def garage_statistics():
     print("\nMost Expensive Car")
     print(expensive_car)
     print(max_price)
-
     print("\nCheapest Car")
     print(cheap_car)
     print(min_price)
