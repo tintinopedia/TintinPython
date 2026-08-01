@@ -1,0 +1,15 @@
+Create_cars = ["Bmw","Audi","Mercedes","Toyota","Hyundai"]
+print(Create_cars)
+print(Create_cars[0])
+print(Create_cars[4])
+print(len(Create_cars))
+Create_cars.append("Tesla ")
+print(Create_cars)
+Create_cars.insert(0,"Ferrari")
+print(Create_cars)
+Create_cars[3] = "Porsche"
+print(Create_cars)
+Create_cars.remove("Hyundai")
+print(Create_cars)
+Create_cars.sort()
+print(Create_cars)
