@@ -9,12 +9,8 @@ garage = {
 
 def display_cars():
     print("__________________________AVAILABLE CARS_________________________________")
-
-    if len(garage) == 0:
-        print("Garage is empty! \n")
-    else:
-        for car, details in garage.items():
-            print(f"{car}\tPrice : {details['price']}\tQuantity : {details['qty']}")
+    for key,value in garage.items():
+        print(key, ":", value)
 
 def search_car():
     car = input("Enter car name: \n")
@@ -35,7 +31,10 @@ def add_car():
         garage[car].update({"price": new_price})
         print("Price updated")
     else:
-        print("car not found")
+        car_input = input("Enter car name: ")
+        car_price = int(input("Enter New Price : "))
+        car_qty = int(input("Enter Quantity : "))
+        garage[car_input] = {"price": car_price, "qty": car_qty}
 def update_price():
     car = input("Enter Car Name : ")
 
@@ -141,11 +140,11 @@ def search_budget():
         print("No cars found")
 def Discount_Calculator():
     car = input("Enter car name: \n")
-    if car in range:
+    if car in garage:
         discount = float(input("Enter Discount % : \n"))
         original = garage[car]["price"]
         discount_amount = original * discount / 100
-        final_price = original * discount_amount
+        final_price = original - discount_amount
         print("\nOriginal Price =", original)
         print("Discount Amount =", discount_amount)
         print("Final Price =", final_price)
