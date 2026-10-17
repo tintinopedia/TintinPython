@@ -13,3 +13,14 @@ plt.xlabel("number of votes")
 plt.ylabel("Subjects")
 plt.title("Favourite Subject")
 plt.show()
+'''
+import matplotlib.pyplot as plt
+subjects = ["Math", "Science", "English", "Art"]
+votes = [8, 6, 9, 4]
+plt.bar(subjects,votes,color=["#B6FBFC","#FCB6EE","#FCF6B6","#5C80EB"])
+plt.title("Favorite Subjects")
+plt.xlabel("Subjects")
+plt.ylabel("Number of Votes")
+plt.ylim(0, 10)
+plt.show()
+'''
